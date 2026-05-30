@@ -31,6 +31,7 @@ export const handler = async (event: APIGatewayProxyEventV2): Promise<APIGateway
             const todo = {
                 id: randomUUID(),
                 title: body.title,
+                priority: body.priority ?? 'normal',
                 done: false,
                 createdAt: new Date().toISOString(),
             }
