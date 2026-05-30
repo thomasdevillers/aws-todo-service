@@ -5,7 +5,9 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "integ-test": "ts-node integ/integ-test.ts",
+    "smoke-test": "ts-node integ/smoke-test.ts"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.161",
